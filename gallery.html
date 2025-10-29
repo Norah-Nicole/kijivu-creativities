@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Creativities Kenya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Creativities Kenya</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about us.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="our work.html">Our Work</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact us.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="work-hero">
+    <h1>Gallery</h1>
+    <p>A glimpse into our world of creativity — moments, stories, and experiences captured in motion and frame.</p>
+  </section>
+
+  <!-- FILTER BAR -->
+  <section class="gallery-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="films">Films</button>
+    <button class="filter-btn" data-filter="events">Events</button>
+    <button class="filter-btn" data-filter="bts">Behind the Scenes</button>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="gallery-grid-section">
+    <div class="gallery-grid">
+      <!-- FILMS -->
+      <img src="assets/images/film1.jpg" alt="Film 1" class="gallery-item films" data-type="image" data-caption="Film 1 – Cinematic storytelling in motion.">
+      <img src="assets/images/film2.jpg" alt="Film 2" class="gallery-item films" data-type="image" data-caption="Film 2 – Visual art that moves hearts.">
+      <video src="assets/videos/film3.mp4" class="gallery-item films" data-type="video" data-caption="Film 3 – Emotion meets direction."></video>
+
+      <!-- EVENTS -->
+      <img src="assets/images/event1.jpg" alt="Event 1" class="gallery-item events" data-type="image" data-caption="Event 1 – Highlights from our creative showcase.">
+      <img src="assets/images/event2.jpg" alt="Event 2" class="gallery-item events" data-type="image" data-caption="Event 2 – Moments that connect people.">
+
+      <!-- BEHIND THE SCENES -->
+      <img src="assets/images/bts1.jpg" alt="Behind the Scenes 1" class="gallery-item bts" data-type="image" data-caption="Behind the Scenes 1 – Creative chaos made beautiful.">
+      <img src="assets/images/bts2.jpg" alt="Behind the Scenes 2" class="gallery-item bts" data-type="image" data-caption="Behind the Scenes 2 – The art behind the lens.">
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta reveal">
+    <h2>Have an idea? Let's bring it to life.</h2>
+    <a href="contact us.html" class="btn primary">Start a Project</a>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <video class="lightbox-video" id="lightbox-video" controls></video>
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Email: info@creativitieskenya.com | Nairobi, Working Across Africa</p>
+    <p>&copy; 2025 Creativities Kenya. All Rights Reserved.</p>
+   <div class="socials">
+      <a href="https://www.tiktok.com/@kijivuland" target="_blank" class="social-icon">TikTok</a>
+      <a href="https://www.instagram.com/kijivuland" target="_blank" class="social-icon">Instagram</a>
+      <a href="#" target="_blank"class="social-icon">Facebook</a>
+      <a href="https://youtube.com/@kijivuland" target="_blank" class="social-icon">YouTube</a>
+      <a href="#" target="_blank" class="social-icon">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

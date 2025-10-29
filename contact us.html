@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Creativities Kenya</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+ <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Creativities Kenya</div>
+    <nav class="nav-links">
+    <a href="index.html">Home</a>
+      <a href="about us.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="our work.html">Our Work</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <main class="contact-page">
+    <section class="contact-hero">
+      <h1>Let’s Create Something Extraordinary</h1>
+      <p>We’d love to hear from you — share your ideas, questions, or project plans below.</p>
+    </section>
+
+    <section class="contact-container">
+      <div class="contact-form">
+        <form action="#" method="post" id="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message..." required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-card">
+          <h3>📍 Location</h3>
+          <p>Nairobi, Working Across Africa</p>
+        </div>
+        <div class="info-card">
+          <h3>✉️ Email</h3>
+          <p>hello@creativitieskenya.com</p>
+        </div>
+        <div class="info-card">
+          <h3>📞 Phone</h3>
+          <p>+254 XXX XXX XXX</p>
+        </div>
+        <div class="info-card socials">
+          <h3>🌐 Connect With Us</h3>
+          <div class="social-links">
+            <a href="#" class="icon">TikTok</a>
+            <a href="#" class="icon">Instagram</a>
+            <a href="#" class="icon">Facebook</a>
+            <a href="#" class="icon">YouTube</a>
+            <a href="#" class="icon">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Nairobi | Working Across Africa</p>
+    <p>© 2025 Creativities Kenya. All Rights Reserved.</p>
+    <div class="footer-socials">
+      <a href="#">TikTok</a> •
+      <a href="#">Instagram</a> •
+      <a href="#">Facebook</a> •
+      <a href="#">YouTube</a> •
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "JmM9qvzoWxiMX1lhB",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_y3oawds', 'template_2m48l84', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
